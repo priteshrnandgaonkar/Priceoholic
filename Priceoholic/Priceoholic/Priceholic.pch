@@ -1,0 +1,13 @@
+//
+//  Priceholic.pch
+//  Priceoholic
+//
+//  Created by Pritesh Nandgaonkar on 16/07/15.
+//  Copyright (c) 2015 Pritesh Nandgaonkar. All rights reserved.
+//
+
+#define ProductListInstance [ProductList theProductList]
+
+#import "Mantle.h"
+#import "Product.h"
+#import "Store.h"

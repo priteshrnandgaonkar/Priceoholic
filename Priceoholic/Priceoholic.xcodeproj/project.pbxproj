@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA344C281B5E4152004D835E /* checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA344C271B5E4152004D835E /* checked@2x.png */; };
+		CA344C2A1B5E415C004D835E /* unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA344C291B5E415C004D835E /* unchecked@2x.png */; };
+		CA344C2D1B5E4A41004D835E /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA344C2C1B5E4A41004D835E /* FilterViewController.m */; };
+		CAB1CDA01B590935001B4FE2 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB1CD9F1B590935001B4FE2 /* CustomCollectionViewCell.m */; };
+		CAB1CDA31B590AC7001B4FE2 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB1CDA21B590AC7001B4FE2 /* CollectionViewController.m */; };
+		CAE0C51D1B612802007096C3 /* FileDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0C51C1B612802007096C3 /* FileDetail.m */; };
+		CAE0E0291B5F8C6000782A7B /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE0E0281B5F8C6000782A7B /* Filter.m */; };
+		CAE6FD151B578FA00039E491 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD141B578FA00039E491 /* main.m */; };
+		CAE6FD181B578FA00039E491 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD171B578FA00039E491 /* AppDelegate.m */; };
+		CAE6FD1E1B578FA00039E491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE6FD1C1B578FA00039E491 /* Main.storyboard */; };
+		CAE6FD201B578FA00039E491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE6FD1F1B578FA00039E491 /* Images.xcassets */; };
+		CAE6FD231B578FA00039E491 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE6FD211B578FA00039E491 /* LaunchScreen.xib */; };
+		CAE6FD2F1B578FA00039E491 /* PriceoholicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD2E1B578FA00039E491 /* PriceoholicTests.m */; };
+		CAE6FD3A1B5790720039E491 /* ProductSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD391B5790720039E491 /* ProductSearchViewController.m */; };
+		CAE6FD3D1B579AD40039E491 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD3C1B579AD40039E491 /* Product.m */; };
+		CAE6FD7F1B57A1030039E491 /* EXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD5D1B57A1030039E491 /* EXTRuntimeExtensions.m */; };
+		CAE6FD801B57A1030039E491 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD5F1B57A1030039E491 /* EXTScope.m */; };
+		CAE6FD811B57A1030039E491 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAE6FD611B57A1030039E491 /* Info.plist */; };
+		CAE6FD821B57A1030039E491 /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD641B57A1030039E491 /* MTLJSONAdapter.m */; };
+		CAE6FD831B57A1030039E491 /* MTLModel+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD661B57A1030039E491 /* MTLModel+NSCoding.m */; };
+		CAE6FD841B57A1030039E491 /* MTLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD681B57A1030039E491 /* MTLModel.m */; };
+		CAE6FD851B57A1030039E491 /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD6A1B57A1030039E491 /* MTLReflection.m */; };
+		CAE6FD861B57A1030039E491 /* MTLTransformerErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD6C1B57A1030039E491 /* MTLTransformerErrorHandling.m */; };
+		CAE6FD871B57A1030039E491 /* MTLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD6E1B57A1030039E491 /* MTLValueTransformer.m */; };
+		CAE6FD881B57A1030039E491 /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD701B57A1030039E491 /* NSArray+MTLManipulationAdditions.m */; };
+		CAE6FD891B57A1030039E491 /* NSDictionary+MTLJSONKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD721B57A1030039E491 /* NSDictionary+MTLJSONKeyPath.m */; };
+		CAE6FD8A1B57A1030039E491 /* NSDictionary+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD741B57A1030039E491 /* NSDictionary+MTLManipulationAdditions.m */; };
+		CAE6FD8B1B57A1030039E491 /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD761B57A1030039E491 /* NSDictionary+MTLMappingAdditions.m */; };
+		CAE6FD8C1B57A1030039E491 /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD781B57A1030039E491 /* NSError+MTLModelException.m */; };
+		CAE6FD8D1B57A1030039E491 /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD7A1B57A1030039E491 /* NSObject+MTLComparisonAdditions.m */; };
+		CAE6FD8E1B57A1030039E491 /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD7C1B57A1030039E491 /* NSValueTransformer+MTLInversionAdditions.m */; };
+		CAE6FD8F1B57A1030039E491 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD7E1B57A1030039E491 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; };
+		CAE6FD921B57BB410039E491 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD911B57BB410039E491 /* Store.m */; };
+		CAE6FD951B57BCCF0039E491 /* ProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE6FD941B57BCCF0039E491 /* ProductList.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAE6FD291B578FA00039E491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE6FD071B578FA00039E491 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE6FD0E1B578FA00039E491;
+			remoteInfo = Priceoholic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAE6FD581B57A07F0039E491 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA344C271B5E4152004D835E /* checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checked@2x.png"; sourceTree = "<group>"; };
+		CA344C291B5E415C004D835E /* unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unchecked@2x.png"; sourceTree = "<group>"; };
+		CA344C2B1B5E4A41004D835E /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		CA344C2C1B5E4A41004D835E /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		CAB1CD9E1B590935001B4FE2 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		CAB1CD9F1B590935001B4FE2 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		CAB1CDA11B590AC7001B4FE2 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		CAB1CDA21B590AC7001B4FE2 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		CAE0C51B1B612802007096C3 /* FileDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDetail.h; sourceTree = "<group>"; };
+		CAE0C51C1B612802007096C3 /* FileDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDetail.m; sourceTree = "<group>"; };
+		CAE0E0271B5F8C6000782A7B /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Filter.h; path = ../Filter.h; sourceTree = "<group>"; };
+		CAE0E0281B5F8C6000782A7B /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Filter.m; path = ../Filter.m; sourceTree = "<group>"; };
+		CAE6FD0F1B578FA00039E491 /* Priceoholic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Priceoholic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE6FD131B578FA00039E491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE6FD141B578FA00039E491 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAE6FD161B578FA00039E491 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CAE6FD171B578FA00039E491 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CAE6FD1D1B578FA00039E491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAE6FD1F1B578FA00039E491 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CAE6FD221B578FA00039E491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CAE6FD281B578FA00039E491 /* PriceoholicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriceoholicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE6FD2D1B578FA00039E491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE6FD2E1B578FA00039E491 /* PriceoholicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceoholicTests.m; sourceTree = "<group>"; };
+		CAE6FD381B5790720039E491 /* ProductSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductSearchViewController.h; path = ../ProductSearchViewController.h; sourceTree = "<group>"; };
+		CAE6FD391B5790720039E491 /* ProductSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductSearchViewController.m; path = ../ProductSearchViewController.m; sourceTree = "<group>"; };
+		CAE6FD3B1B579AD40039E491 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		CAE6FD3C1B579AD40039E491 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		CAE6FD5B1B57A1030039E491 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
+		CAE6FD5C1B57A1030039E491 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		CAE6FD5D1B57A1030039E491 /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		CAE6FD5E1B57A1030039E491 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		CAE6FD5F1B57A1030039E491 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
+		CAE6FD601B57A1030039E491 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		CAE6FD611B57A1030039E491 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE6FD621B57A1030039E491 /* Mantle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mantle.h; sourceTree = "<group>"; };
+		CAE6FD631B57A1030039E491 /* MTLJSONAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLJSONAdapter.h; sourceTree = "<group>"; };
+		CAE6FD641B57A1030039E491 /* MTLJSONAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLJSONAdapter.m; sourceTree = "<group>"; };
+		CAE6FD651B57A1030039E491 /* MTLModel+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLModel+NSCoding.h"; sourceTree = "<group>"; };
+		CAE6FD661B57A1030039E491 /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLModel+NSCoding.m"; sourceTree = "<group>"; };
+		CAE6FD671B57A1030039E491 /* MTLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLModel.h; sourceTree = "<group>"; };
+		CAE6FD681B57A1030039E491 /* MTLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLModel.m; sourceTree = "<group>"; };
+		CAE6FD691B57A1030039E491 /* MTLReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLReflection.h; sourceTree = "<group>"; };
+		CAE6FD6A1B57A1030039E491 /* MTLReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLReflection.m; sourceTree = "<group>"; };
+		CAE6FD6B1B57A1030039E491 /* MTLTransformerErrorHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLTransformerErrorHandling.h; sourceTree = "<group>"; };
+		CAE6FD6C1B57A1030039E491 /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
+		CAE6FD6D1B57A1030039E491 /* MTLValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLValueTransformer.h; sourceTree = "<group>"; };
+		CAE6FD6E1B57A1030039E491 /* MTLValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLValueTransformer.m; sourceTree = "<group>"; };
+		CAE6FD6F1B57A1030039E491 /* NSArray+MTLManipulationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
+		CAE6FD701B57A1030039E491 /* NSArray+MTLManipulationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
+		CAE6FD711B57A1030039E491 /* NSDictionary+MTLJSONKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MTLJSONKeyPath.h"; sourceTree = "<group>"; };
+		CAE6FD721B57A1030039E491 /* NSDictionary+MTLJSONKeyPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTLJSONKeyPath.m"; sourceTree = "<group>"; };
+		CAE6FD731B57A1030039E491 /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
+		CAE6FD741B57A1030039E491 /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
+		CAE6FD751B57A1030039E491 /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
+		CAE6FD761B57A1030039E491 /* NSDictionary+MTLMappingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MTLMappingAdditions.m"; sourceTree = "<group>"; };
+		CAE6FD771B57A1030039E491 /* NSError+MTLModelException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+MTLModelException.h"; sourceTree = "<group>"; };
+		CAE6FD781B57A1030039E491 /* NSError+MTLModelException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+MTLModelException.m"; sourceTree = "<group>"; };
+		CAE6FD791B57A1030039E491 /* NSObject+MTLComparisonAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTLComparisonAdditions.h"; sourceTree = "<group>"; };
+		CAE6FD7A1B57A1030039E491 /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
+		CAE6FD7B1B57A1030039E491 /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
+		CAE6FD7C1B57A1030039E491 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
+		CAE6FD7D1B57A1030039E491 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
+		CAE6FD7E1B57A1030039E491 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
+		CAE6FD901B57BB410039E491 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		CAE6FD911B57BB410039E491 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		CAE6FD931B57BCCF0039E491 /* ProductList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductList.h; sourceTree = "<group>"; };
+		CAE6FD941B57BCCF0039E491 /* ProductList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductList.m; sourceTree = "<group>"; };
+		CAE6FD961B57BE700039E491 /* Priceholic.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Priceholic.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE6FD0C1B578FA00039E491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE6FD251B578FA00039E491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAE6FD061B578FA00039E491 = {
+			isa = PBXGroup;
+			children = (
+				CAE6FD111B578FA00039E491 /* Priceoholic */,
+				CAE6FD2B1B578FA00039E491 /* PriceoholicTests */,
+				CAE6FD101B578FA00039E491 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE6FD101B578FA00039E491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6FD0F1B578FA00039E491 /* Priceoholic.app */,
+				CAE6FD281B578FA00039E491 /* PriceoholicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE6FD111B578FA00039E491 /* Priceoholic */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6FD591B57A1030039E491 /* Mantle */,
+				CAE6FD161B578FA00039E491 /* AppDelegate.h */,
+				CAE6FD171B578FA00039E491 /* AppDelegate.m */,
+				CAE6FD381B5790720039E491 /* ProductSearchViewController.h */,
+				CAE6FD391B5790720039E491 /* ProductSearchViewController.m */,
+				CAB1CDA11B590AC7001B4FE2 /* CollectionViewController.h */,
+				CAB1CDA21B590AC7001B4FE2 /* CollectionViewController.m */,
+				CAB1CD9E1B590935001B4FE2 /* CustomCollectionViewCell.h */,
+				CAB1CD9F1B590935001B4FE2 /* CustomCollectionViewCell.m */,
+				CA344C2B1B5E4A41004D835E /* FilterViewController.h */,
+				CA344C2C1B5E4A41004D835E /* FilterViewController.m */,
+				CAE6FD3B1B579AD40039E491 /* Product.h */,
+				CAE6FD3C1B579AD40039E491 /* Product.m */,
+				CAE6FD901B57BB410039E491 /* Store.h */,
+				CAE6FD911B57BB410039E491 /* Store.m */,
+				CAE0E0271B5F8C6000782A7B /* Filter.h */,
+				CAE0E0281B5F8C6000782A7B /* Filter.m */,
+				CAE0C51B1B612802007096C3 /* FileDetail.h */,
+				CAE0C51C1B612802007096C3 /* FileDetail.m */,
+				CAE6FD931B57BCCF0039E491 /* ProductList.h */,
+				CAE6FD941B57BCCF0039E491 /* ProductList.m */,
+				CAE6FD1C1B578FA00039E491 /* Main.storyboard */,
+				CAE6FD211B578FA00039E491 /* LaunchScreen.xib */,
+				CA344C271B5E4152004D835E /* checked@2x.png */,
+				CA344C291B5E415C004D835E /* unchecked@2x.png */,
+				CAE6FD1F1B578FA00039E491 /* Images.xcassets */,
+				CAE6FD121B578FA00039E491 /* Supporting Files */,
+				CAE6FD961B57BE700039E491 /* Priceholic.pch */,
+			);
+			path = Priceoholic;
+			sourceTree = "<group>";
+		};
+		CAE6FD121B578FA00039E491 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6FD131B578FA00039E491 /* Info.plist */,
+				CAE6FD141B578FA00039E491 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAE6FD2B1B578FA00039E491 /* PriceoholicTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6FD2E1B578FA00039E491 /* PriceoholicTests.m */,
+				CAE6FD2C1B578FA00039E491 /* Supporting Files */,
+			);
+			path = PriceoholicTests;
+			sourceTree = "<group>";
+		};
+		CAE6FD2C1B578FA00039E491 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6FD2D1B578FA00039E491 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAE6FD591B57A1030039E491 /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6FD5A1B57A1030039E491 /* extobjc */,
+				CAE6FD611B57A1030039E491 /* Info.plist */,
+				CAE6FD621B57A1030039E491 /* Mantle.h */,
+				CAE6FD631B57A1030039E491 /* MTLJSONAdapter.h */,
+				CAE6FD641B57A1030039E491 /* MTLJSONAdapter.m */,
+				CAE6FD651B57A1030039E491 /* MTLModel+NSCoding.h */,
+				CAE6FD661B57A1030039E491 /* MTLModel+NSCoding.m */,
+				CAE6FD671B57A1030039E491 /* MTLModel.h */,
+				CAE6FD681B57A1030039E491 /* MTLModel.m */,
+				CAE6FD691B57A1030039E491 /* MTLReflection.h */,
+				CAE6FD6A1B57A1030039E491 /* MTLReflection.m */,
+				CAE6FD6B1B57A1030039E491 /* MTLTransformerErrorHandling.h */,
+				CAE6FD6C1B57A1030039E491 /* MTLTransformerErrorHandling.m */,
+				CAE6FD6D1B57A1030039E491 /* MTLValueTransformer.h */,
+				CAE6FD6E1B57A1030039E491 /* MTLValueTransformer.m */,
+				CAE6FD6F1B57A1030039E491 /* NSArray+MTLManipulationAdditions.h */,
+				CAE6FD701B57A1030039E491 /* NSArray+MTLManipulationAdditions.m */,
+				CAE6FD711B57A1030039E491 /* NSDictionary+MTLJSONKeyPath.h */,
+				CAE6FD721B57A1030039E491 /* NSDictionary+MTLJSONKeyPath.m */,
+				CAE6FD731B57A1030039E491 /* NSDictionary+MTLManipulationAdditions.h */,
+				CAE6FD741B57A1030039E491 /* NSDictionary+MTLManipulationAdditions.m */,
+				CAE6FD751B57A1030039E491 /* NSDictionary+MTLMappingAdditions.h */,
+				CAE6FD761B57A1030039E491 /* NSDictionary+MTLMappingAdditions.m */,
+				CAE6FD771B57A1030039E491 /* NSError+MTLModelException.h */,
+				CAE6FD781B57A1030039E491 /* NSError+MTLModelException.m */,
+				CAE6FD791B57A1030039E491 /* NSObject+MTLComparisonAdditions.h */,
+				CAE6FD7A1B57A1030039E491 /* NSObject+MTLComparisonAdditions.m */,
+				CAE6FD7B1B57A1030039E491 /* NSValueTransformer+MTLInversionAdditions.h */,
+				CAE6FD7C1B57A1030039E491 /* NSValueTransformer+MTLInversionAdditions.m */,
+				CAE6FD7D1B57A1030039E491 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */,
+				CAE6FD7E1B57A1030039E491 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */,
+			);
+			path = Mantle;
+			sourceTree = "<group>";
+		};
+		CAE6FD5A1B57A1030039E491 /* extobjc */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6FD5B1B57A1030039E491 /* EXTKeyPathCoding.h */,
+				CAE6FD5C1B57A1030039E491 /* EXTRuntimeExtensions.h */,
+				CAE6FD5D1B57A1030039E491 /* EXTRuntimeExtensions.m */,
+				CAE6FD5E1B57A1030039E491 /* EXTScope.h */,
+				CAE6FD5F1B57A1030039E491 /* EXTScope.m */,
+				CAE6FD601B57A1030039E491 /* metamacros.h */,
+			);
+			path = extobjc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE6FD0E1B578FA00039E491 /* Priceoholic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE6FD321B578FA00039E491 /* Build configuration list for PBXNativeTarget "Priceoholic" */;
+			buildPhases = (
+				CAE6FD0B1B578FA00039E491 /* Sources */,
+				CAE6FD0C1B578FA00039E491 /* Frameworks */,
+				CAE6FD0D1B578FA00039E491 /* Resources */,
+				CAE6FD581B57A07F0039E491 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Priceoholic;
+			productName = Priceoholic;
+			productReference = CAE6FD0F1B578FA00039E491 /* Priceoholic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAE6FD271B578FA00039E491 /* PriceoholicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE6FD351B578FA00039E491 /* Build configuration list for PBXNativeTarget "PriceoholicTests" */;
+			buildPhases = (
+				CAE6FD241B578FA00039E491 /* Sources */,
+				CAE6FD251B578FA00039E491 /* Frameworks */,
+				CAE6FD261B578FA00039E491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE6FD2A1B578FA00039E491 /* PBXTargetDependency */,
+			);
+			name = PriceoholicTests;
+			productName = PriceoholicTests;
+			productReference = CAE6FD281B578FA00039E491 /* PriceoholicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE6FD071B578FA00039E491 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Pritesh Nandgaonkar";
+				TargetAttributes = {
+					CAE6FD0E1B578FA00039E491 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					CAE6FD271B578FA00039E491 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = CAE6FD0E1B578FA00039E491;
+					};
+				};
+			};
+			buildConfigurationList = CAE6FD0A1B578FA00039E491 /* Build configuration list for PBXProject "Priceoholic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE6FD061B578FA00039E491;
+			productRefGroup = CAE6FD101B578FA00039E491 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE6FD0E1B578FA00039E491 /* Priceoholic */,
+				CAE6FD271B578FA00039E491 /* PriceoholicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE6FD0D1B578FA00039E491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE6FD811B57A1030039E491 /* Info.plist in Resources */,
+				CA344C281B5E4152004D835E /* checked@2x.png in Resources */,
+				CAE6FD1E1B578FA00039E491 /* Main.storyboard in Resources */,
+				CA344C2A1B5E415C004D835E /* unchecked@2x.png in Resources */,
+				CAE6FD231B578FA00039E491 /* LaunchScreen.xib in Resources */,
+				CAE6FD201B578FA00039E491 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE6FD261B578FA00039E491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE6FD0B1B578FA00039E491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE6FD801B57A1030039E491 /* EXTScope.m in Sources */,
+				CAE0E0291B5F8C6000782A7B /* Filter.m in Sources */,
+				CAE6FD8E1B57A1030039E491 /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
+				CAE6FD8F1B57A1030039E491 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
+				CAE6FD951B57BCCF0039E491 /* ProductList.m in Sources */,
+				CAE6FD921B57BB410039E491 /* Store.m in Sources */,
+				CAE6FD3A1B5790720039E491 /* ProductSearchViewController.m in Sources */,
+				CAE6FD8D1B57A1030039E491 /* NSObject+MTLComparisonAdditions.m in Sources */,
+				CAE6FD841B57A1030039E491 /* MTLModel.m in Sources */,
+				CAB1CDA31B590AC7001B4FE2 /* CollectionViewController.m in Sources */,
+				CAB1CDA01B590935001B4FE2 /* CustomCollectionViewCell.m in Sources */,
+				CAE6FD8B1B57A1030039E491 /* NSDictionary+MTLMappingAdditions.m in Sources */,
+				CAE6FD881B57A1030039E491 /* NSArray+MTLManipulationAdditions.m in Sources */,
+				CAE0C51D1B612802007096C3 /* FileDetail.m in Sources */,
+				CAE6FD8C1B57A1030039E491 /* NSError+MTLModelException.m in Sources */,
+				CAE6FD7F1B57A1030039E491 /* EXTRuntimeExtensions.m in Sources */,
+				CAE6FD3D1B579AD40039E491 /* Product.m in Sources */,
+				CAE6FD871B57A1030039E491 /* MTLValueTransformer.m in Sources */,
+				CAE6FD831B57A1030039E491 /* MTLModel+NSCoding.m in Sources */,
+				CA344C2D1B5E4A41004D835E /* FilterViewController.m in Sources */,
+				CAE6FD181B578FA00039E491 /* AppDelegate.m in Sources */,
+				CAE6FD821B57A1030039E491 /* MTLJSONAdapter.m in Sources */,
+				CAE6FD851B57A1030039E491 /* MTLReflection.m in Sources */,
+				CAE6FD891B57A1030039E491 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
+				CAE6FD151B578FA00039E491 /* main.m in Sources */,
+				CAE6FD8A1B57A1030039E491 /* NSDictionary+MTLManipulationAdditions.m in Sources */,
+				CAE6FD861B57A1030039E491 /* MTLTransformerErrorHandling.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE6FD241B578FA00039E491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE6FD2F1B578FA00039E491 /* PriceoholicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAE6FD2A1B578FA00039E491 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE6FD0E1B578FA00039E491 /* Priceoholic */;
+			targetProxy = CAE6FD291B578FA00039E491 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAE6FD1C1B578FA00039E491 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE6FD1D1B578FA00039E491 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAE6FD211B578FA00039E491 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE6FD221B578FA00039E491 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE6FD301B578FA00039E491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CAE6FD311B578FA00039E491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE6FD331B578FA00039E491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Priceoholic/Priceholic.pch;
+				INFOPLIST_FILE = Priceoholic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CAE6FD341B578FA00039E491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Priceoholic/Priceholic.pch;
+				INFOPLIST_FILE = Priceoholic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CAE6FD361B578FA00039E491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PriceoholicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Priceoholic.app/Priceoholic";
+			};
+			name = Debug;
+		};
+		CAE6FD371B578FA00039E491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PriceoholicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Priceoholic.app/Priceoholic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE6FD0A1B578FA00039E491 /* Build configuration list for PBXProject "Priceoholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE6FD301B578FA00039E491 /* Debug */,
+				CAE6FD311B578FA00039E491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE6FD321B578FA00039E491 /* Build configuration list for PBXNativeTarget "Priceoholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE6FD331B578FA00039E491 /* Debug */,
+				CAE6FD341B578FA00039E491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE6FD351B578FA00039E491 /* Build configuration list for PBXNativeTarget "PriceoholicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE6FD361B578FA00039E491 /* Debug */,
+				CAE6FD371B578FA00039E491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE6FD071B578FA00039E491 /* Project object */;
+}
